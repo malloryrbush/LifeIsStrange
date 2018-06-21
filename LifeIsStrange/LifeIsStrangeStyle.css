@@ -1,0 +1,83 @@
+﻿.container{
+    display:grid;
+    grid-template-rows: 90px 60px 550px;
+    grid-template-columns: 1fr;
+    width:1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+padding:10px 0px 10px 60px;
+
+}
+
+header {
+    grid-column:1;
+    grid-row:1;
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    align-items: center;
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: darkred;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: darkred;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 100px;
+    overflow: hidden;
+    background-color: darkred;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height:30px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:black;
+}
+
+.main {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    background-image: url('images/lifeisstrangejunkyard.jpg');
+    justify-content: flex-end;
+    padding-right:30px;
+    align-items:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
